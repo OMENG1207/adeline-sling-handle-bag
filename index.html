@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adeline Sling Handle Bag - Simple • Elegant • Timeless</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg-dark: #0a0a0a;
+      --gold: #d4af37;
+      --gold-light: #e8c97e;
+      --text-light: #f5f5f5;
+      --accent: #c41e3a;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header { text-align: center; padding: 30px 0 10px; }
+    .hero-img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .section { padding: 70px 0; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.4rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.7rem;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .desc {
+      max-width: 850px;
+      margin: 0 auto 50px;
+      font-size: 1.15rem;
+      text-align: center;
+    }
+    .highlight { color: var(--gold); font-weight: 600; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .feature-item {
+      background: rgba(25,25,25,0.85);
+      padding: 32px 25px;
+      border-radius: 16px;
+      border: 1px solid var(--gold);
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .feature-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(212,175,55,0.25);
+    }
+    .feature-item::before {
+      content: "✔";
+      display: block;
+      font-size: 2.8rem;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+      margin: 50px 0;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 520px;
+      border-radius: 16px;
+      border: 2px solid var(--gold-light);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    .variants {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin: 60px 0;
+    }
+    .variant-card {
+      text-align: center;
+    }
+    .variant-card img {
+      width: 100%;
+      border-radius: 18px;
+      border: 3px solid var(--gold);
+      margin-bottom: 15px;
+      box-shadow: 0 12px 35px rgba(212,175,55,0.2);
+    }
+    .variant-label {
+      font-size: 1.55rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    .testimonials {
+      background: linear-gradient(#111, #0a0a0a);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .testimonial {
+      max-width: 800px;
+      margin: 0 auto 55px;
+      font-style: italic;
+      font-size: 1.18rem;
+      padding: 0 20px;
+    }
+    .author { margin-top: 18px; color: var(--gold-light); font-weight: 500; }
+
+    .promo-timer {
+      background: linear-gradient(135deg, #111, #000);
+      border: 3px solid var(--gold);
+      border-radius: 20px;
+      padding: 45px 25px;
+      text-align: center;
+      max-width: 850px;
+      margin: 60px auto;
+      box-shadow: 0 0 50px rgba(212,175,55,0.3);
+    }
+    .promo-timer h3 {
+      color: var(--accent);
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+    }
+    .countdown {
+      font-size: 3.1rem;
+      font-weight: bold;
+      color: var(--gold);
+      letter-spacing: 5px;
+      margin: 20px 0;
+    }
+
+    .note {
+      background: rgba(25,25,25,0.9);
+      padding: 35px;
+      border-radius: 16px;
+      border: 1px solid var(--gold-light);
+      max-width: 950px;
+      margin: 50px auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .pricing {
+      text-align: center;
+      padding: 70px 0;
+      background: linear-gradient(to bottom, #0a0a0a, #111);
+    }
+    .promo-title {
+      font-size: 2.9rem;
+      color: #ffcc00;
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+    .price-promo {
+      font-size: 4.8rem;
+      font-weight: bold;
+      color: var(--gold);
+      margin: 20px 0;
+    }
+    .price-normal {
+      font-size: 2.4rem;
+      color: #aaa;
+      text-decoration: line-through;
+    }
+    .hemat {
+      font-size: 2.2rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 20px 0;
+    }
+
+    .promo-img-container {
+      position: relative;
+      text-align: center;
+      margin: 60px 0;
+    }
+    .promo-img {
+      width: 100%;
+      max-width: 750px;
+      border-radius: 18px;
+      border: 4px solid var(--gold);
+      box-shadow: 0 15px 50px rgba(0,0,0,0.75);
+    }
+    .promo-badge {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      background: var(--accent);
+      color: white;
+      font-size: 2.8rem;
+      font-weight: bold;
+      padding: 18px 35px;
+      border-radius: 50px;
+      transform: rotate(-12deg);
+      box-shadow: 0 8px 25px rgba(196,30,58,0.7);
+      border: 4px solid var(--gold);
+      z-index: 10;
+    }
+
+    .order-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .order-section h2 { margin-bottom: 50px; }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.6rem; }
+      h2 { font-size: 2.1rem; }
+      .price-promo { font-size: 3.8rem; }
+      .promo-badge { font-size: 2rem; padding: 12px 25px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Gambar Utama -->
+  <header>
+    <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztd-mextfsealerl6c.webp" alt="Adeline Sling Handle Bag" class="hero-img"/>
+  </header>
+
+  <!-- 2. Judul & Deskripsi -->
+  <section class="section">
+    <div class="container">
+      <h1>ADELINE SLING HANDLE BAG</h1>
+      <div class="subtitle">Simple • Elegant • Timeless</div>
+      <div class="desc">
+        Tampil elegan tanpa berlebihan 👜✨<br><br>
+        Tas dengan desain minimalis modern yang simple tapi tetap stylish, cocok untuk berbagai kesempatan – dari daily hingga acara semi-formal.<br><br>
+        Menggunakan material PU Leather premium yang halus, tahan lama, dan mudah dibersihkan. Dilengkapi aksen gold hardware yang memberikan sentuhan mewah dan classy.<br><br>
+        Memiliki tali panjang adjustable sehingga bisa digunakan sebagai sling bag atau shoulder bag, sesuai gaya dan kebutuhanmu.<br><br>
+        Ukurannya compact tapi tetap muat untuk kebutuhan harian seperti HP, dompet, make up, dan barang kecil lainnya 🤍<br><br>
+        <strong>✨ Detail Produk</strong><br>
+        📐 Panjang: 20 cm<br>
+        📐 Lebar: 9 cm<br>
+        📐 Tinggi: 11 cm<br>
+        📏 Tali panjang: ±120 cm (adjustable)
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Keunggulan Produk -->
+  <section class="section">
+    <div class="container">
+      <h2>Keunggulan Produk</h2>
+      <div class="features">
+        <div class="feature-item">Desain elegan & timeless</div>
+        <div class="feature-item">Material PU leather premium</div>
+        <div class="feature-item">Aksen gold hardware mewah</div>
+        <div class="feature-item">Tali panjang adjustable</div>
+        <div class="feature-item">Bisa sling & shoulder bag</div>
+        <div class="feature-item">Ringan & nyaman dipakai</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Detail Produk -->
+  <section class="section">
+    <div class="container">
+      <h2>Detail Produk</h2>
+      <div class="gallery">
+        <div>
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mextfseah72950.webp" alt="Detail Gold Hardware"/>
+          <p style="text-align:center; margin-top:18px; color:var(--gold-light);">Aksen gold hardware mewah & elegant</p>
+        </div>
+        <div>
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztl-mextfseak075d1.webp" alt="Detail Tali Adjustable"/>
+          <p style="text-align:center; margin-top:18px; color:var(--gold-light);">Tali panjang adjustable – fleksibel sebagai sling atau shoulder bag</p>
+        </div>
+        <div>
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-81zte-mey1qvswketf65.webp" alt="Detail Ukuran & Desain"/>
+          <p style="text-align:center; margin-top:18px; color:var(--gold-light);">Desain minimalis modern & compact</p>
+        </div>
+        <div>
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztd-mey1qvv23h8l46.webp" alt="Detail Material"/>
+          <p style="text-align:center; margin-top:18px; color:var(--gold-light);">PU Leather premium yang halus & tahan lama</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Varian Warna -->
+  <section class="section">
+    <div class="container">
+      <h2>Pilihan Warna</h2>
+      <div class="variants">
+        <div class="variant-card">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztm-mey1qvvarbb59f@resize_w450_nl.webp" alt="BLACK"/>
+          <div class="variant-label">BLACK</div>
+        </div>
+        <div class="variant-card">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztn-mey1qvvaspvl10@resize_w450_nl.webp" alt="COFFEE"/>
+          <div class="variant-label">COFFEE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimoni dengan Foto -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Kata Pelanggan Kami</h2>
+      
+      <div class="testimonial">
+        “Tas mungil tapi lega, warna cantik, dipake hangout atau kondangan bisa 🫶🏼”
+        <div style="margin-top:15px;">
+          <img src="https://down-id.img.susercontent.com/file/id-11134103-81zte-mfo0od5y3nkdef.webp" style="max-width:100%; border-radius:12px; border:2px solid var(--gold-light);" alt="Testimoni 1"/>
+        </div>
+        <div class="author">— arah Putri, Jakarta</div>
+      </div>
+
+      <div class="testimonial">
+        “Tasnya kecil dan lucu pas utk ke pesta. Dan Lebih cantik aslinya 💕”
+        <div style="margin-top:15px;">
+          <img src="https://down-id.img.susercontent.com/file/id-11134103-82252-mi8old6429e0a9.webp" style="max-width:100%; border-radius:12px; border:2px solid var(--gold-light);" alt="Testimoni 2"/>
+        </div>
+        <div class="author">— Nadia Rahma, Bandung</div>
+      </div>
+
+      <div class="testimonial">
+        “Tas nya cantik ukuran nya pas gk besar dan gk kecil cocok buat formal/nonformal. Love bgt sma tas nya 🫰”
+        <div style="margin-top:15px;">
+          <img src="https://down-id.img.susercontent.com/file/id-11134103-8224u-mhuk55p912is2a.webp" style="max-width:100%; border-radius:12px; border:2px solid var(--gold-light);" alt="Testimoni 3"/>
+        </div>
+        <div class="author">— Rina Melati, Surabaya</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Promo Timer -->
+  <div class="promo-timer">
+    <h3>⚠️ PROMO SPESIAL HARI INI SAJA ⚠️</h3>
+    <p style="font-size:1.4rem; margin:15px 0;">Harga akan kembali normal setelah promo berakhir!</p>
+    <div class="countdown">00 : 14 : 22 : 45</div>
+    <p style="color:var(--gold);">Waktu tersisa sebelum harga naik ke Rp399.000</p>
+  </div>
+
+  <!-- 8. Note -->
+  <div class="note">
+    <strong>Catatan Penting Pemesanan & Pengiriman:</strong><br><br>
+    • Pengiriman 2 - 4 Hari Setelah Pemesanan<br>
+    • Mohon Isi Alamat Dengan Lengkap<br>
+    • 100% Product Original
+  </div>
+
+  <!-- 9. Harga -->
+  <section class="pricing">
+    <div class="container">
+      <div class="promo-title">PROMO SPESIAL HARI INI</div>
+      <p style="font-size:1.4rem; margin:25px 0;">Dapatkan Diskon Spesial Untuk Hari Ini Saja</p>
+      <div class="price-promo">Rp 250.000</div>
+      <div class="price-normal">Rp 399.000</div>
+      <div class="hemat">Anda Hemat Rp 149.000!</div>
+    </div>
+  </section>
+
+  <!-- 10. Gambar Promo di Atas Form -->
+  <section class="section">
+    <div class="container">
+      <div class="promo-img-container">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-81zte-mey1qvswyghya3.webp" alt="Promo Adeline Bag" class="promo-img"/>
+        <div class="promo-badge">DISKON<br>SPECIAL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Form Pemesanan -->
+  <section class="order-section">
+    <div class="container">
+      <h2>Klik Untuk Pemesanan Sekarang</h2>
+      
+      <div class="ooef">
+        <form class="orderonline-embed-form" 
+              data-username="vita" 
+              data-product-slug="adeline-sling-handle-bag" 
+              data-product-id="69d2885aabc9e010d208a325" 
+              id="oo-embed-form-adeline-sling-handle-bag-7508" 
+              data-origin="orderonline">
+          <div class="ooef-loader">
+            <div aria-live="polite" role="status"><div>Loading...</div></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- OrderOnline Script - Ditempatkan paling bawah -->
+  <script>
+    if (typeof xLogError !== 'function') {
+      var xLogError = function(error) {
+        var req = new XMLHttpRequest();
+        var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+        var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+        req.open('POST', 'https://api.orderonline.id/log', true);
+        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        req.send(params);
+      };
+    }
+
+    try {
+      if (typeof xEmbedScript !== 'function') {
+        var xEmbedScript = function() {
+          !function(w, d, e, v, id, t, s) {
+            if (d.getElementById(id)) return;
+            t = d.createElement(e); t.async = !0; t.src = v; t.id = id;
+            s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+          }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js');
+        };
+      }
+
+      if (typeof xEmbedInit !== 'function') {
+        var xEmbedInit = function(w, n) {
+          if (w.ooe) return;
+          n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+          if (!w._ooe) w._ooe = n;
+          n.push = n; n.loaded = !0; n.version = '8.0.2'; n.queue = [];
+        };
+      }
+
+      xEmbedInit(window);
+      ooe('setup', 'redirect', 'https://vita.orderonline.id');
+      ooe('init', '5f1a8627a9bf8058b0424f32', '69d2885aabc9e010d208a325', '69d2885aabc9e010d208a326', 'oo-embed-form-adeline-sling-handle-bag-7508', {
+        "mode":"page",
+        "action":"Klik untuk pemesanan",
+        "title":"Form Pemesanan",
+        "triggerPixel":false,
+        "triggerGtm":false
+      });
+
+      if (!window.jQuery) {
+        !function(w, d, e, v, id, t, s) {
+          if (d.getElementById(id)) return;
+          t = d.createElement(e); t.async = !0; t.src = v; t.id = id;
+          t.addEventListener('load', xEmbedScript);
+          s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+        }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+      } else {
+        xEmbedScript();
+      }
+    } catch (e) {
+      xLogError(e);
+      console.error("Embed error:", e);
+    }
+  </script>
+
+</body>
+</html>
